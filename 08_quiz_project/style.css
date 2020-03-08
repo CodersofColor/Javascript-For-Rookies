@@ -1,0 +1,21 @@
+.score-wrap{
+  display:none;
+  padding:4rem 0;
+  background:aliceblue;
+}
+.score-wrap.show{
+  display:block;
+}
+.score-box{
+  font-size:60px;
+  font-weight: bold;
+  text-align: center;
+  color:blue;
+}
+
+.score-box:empty{
+  display:none;
+}
+.score-box:blank{
+  display:none;
+}
