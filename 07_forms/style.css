@@ -1,0 +1,11 @@
+.form{
+  width:350px;
+  margin:0 auto;
+  padding:2rem;
+}
+input[type='text']{
+  padding:1rem 1rem;
+}
+input[type='submit']{
+  padding:1rem;
+}

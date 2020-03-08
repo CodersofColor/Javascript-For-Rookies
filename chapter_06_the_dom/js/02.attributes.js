@@ -13,12 +13,13 @@ link.setAttribute('target', '_blank');
 // console.log(link.getAttribute('href'));
 
 
-//
-/*
+/**********
 *
 *  CLASS ATTRIBUTES
 *
+***********
 */
+
 //Adding a class
 const content = document.getElementById('headline');
 content.classList.add('success');
