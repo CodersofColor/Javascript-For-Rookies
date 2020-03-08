@@ -9,3 +9,25 @@ input[type='text']{
 input[type='submit']{
   padding:1rem;
 }
+#name.valid{
+  border:solid 1px green;
+  background-color:lightgreen;
+}
+.error {
+  border:solid 1px red;
+  background-color:lightcoral;
+}
+
+.feedback {
+  display:none;
+  margin:1rem 0;
+  padding:.5rem;
+  text-align: center;
+  font-style: italic;
+  border:solid 1px yellow;
+  background-color: lightyellow;
+  color:darkkhaki;
+}
+.feedback.show{
+  display:block;
+}
