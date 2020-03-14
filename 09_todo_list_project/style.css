@@ -1,0 +1,36 @@
+body {
+  background:#469029;
+}
+.container{
+  max-width: 400px;
+  margin:0 auto;
+}
+.list-group{
+  color:#3c7c24;
+}
+.list-group li{
+  display: flex;
+  font-weight: bold;
+  background-color:#4c9c2d;
+}
+.list-group li.filter{
+  display:none!important;
+}
+.list-group li:hover{
+  background-color: #e0f4d8;
+  color:#4c9c2d;
+}
+
+.list-group li i {
+
+}
+.delete{
+  cursor: pointer;
+}
+
+input[type='text']{
+  outline:none;
+  border:none;
+  background:#377020;
+  color:#fefefe;
+}
