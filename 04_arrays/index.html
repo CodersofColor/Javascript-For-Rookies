@@ -10,24 +10,133 @@
   <link rel="stylesheet" href="../general.css">
 </head>
 <body class="line-numbers">
-  <div class="container">
-    <h1>Arrays</h1>
-    <hr />
-    <p>An <strong>Array</strong> is a global object that is used to create list like objects called 'arrays'. Think of arrays as a long list. Each item on the list can hold a list of it's own as well.</p>
-    <h4>Important things to remember about Arrays</h4>
+  <nav class="page-nav">
     <ul>
-      <li>The length of an array is not limited</li>
-      <li>The types of data an array can hold is not limited</li>
-    </ul>
-  </div>
-  <section class="container">
-    <pre><code class="lang-javascript">
-      //Array Example
-      let fruits = ['Apple', 'Orange'];
+      <span>Home</span>
+      <li><a href="#">Arrays</a></li>
+      <span>Methods</span>
+      <li><a href="#push">Push</a></li>
+      <li><a href="#pop">Pop</a></li>
 
-      //Get array length
-      console.log(fruit.length);
-    </code></pre>
+      <li><a href="#filter">Filter</a></li>
+      <li><a href="#sort">sort</a></li>
+      <li><a href="#map">map</a></li>
+      <li><a href="#reduce">reduce</a></li>
+      <li><a href="#find">find</a></li>
+    </ul>
+  </nav>
+  <section class="content">
+    <div class="container">
+      <h1>Arrays</h1>
+      <hr class="divider" />
+      <p>An <strong>Array</strong> is a global object that is used to create an ordered list of collected data. Think of arrays as a list that can be any size you want it to be. Each item within that list can also hold a list of items as well.</p>
+      <h4>Important things to remember about Arrays</h4>
+      <ul>
+        <li>The length of an array is not limited</li>
+        <li>The types of data an array can hold is not limited</li>
+      </ul>
+    </div>
+    <div class="container">
+      <pre><code class="lang-javascript">
+        //Array Example One 
+        const daysOfTheWeek = [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ];
+
+        //Array Example Two
+        const fruits = ['Apple', 'Orange'];
+
+        //Get array length
+        console.log(fruit.length);
+
+        //Array Example Three
+        const scores = [10,30,15,25,40];
+        console.log(scores[0])
+
+        //
+      </code></pre>
+    </div>
+  </section>
+  <section class="content">
+    <div class="container">
+      <h2>Array Methods</h2>
+      <p>Arrays have dozens of methods that live/work on them. Methods are a way to describe functions that live on a JS object. Here are a few array methods below:</p>
+      
+    </div>
+    <hr class="divider">
+    <div class="container">
+      <h3 id="push">Push()</h3>
+      <p>The <code>push()</code> method adds new items to the end of an array, and returns the updated array.</p>
+
+      <pre><code class="lang-javascript">
+        const scores = [10,30,15,25,40];
+        scores.push(60);
+
+        console.log(scores);
+        //logs [10,30,15,25,40,60]
+      </code></pre>
+    </div>
+
+    <hr class="divider">
+
+    <div class="container">
+      <h3 id="pop">Pop()</h3>
+      <p>The <code>pop()</code> method removes the last element in an array</p>
+
+      <pre><code class="lang-javascript">
+        const scores = [10,30,15,25,40];
+        scores.push(60);
+        scores.pop();
+
+        console.log(scores);
+        //logs [10,30,15,25,40]
+      </code></pre>
+    </div>
+
+
+    <hr class="divider">
+
+
+    <div class="container">
+      <h3 id="filter">Filter()</h3>
+      
+      <p>The <code>filter()</code> method creates a new array with all elements that pass the test ran by the provided function.</p>
+      <pre><code class="lang-javascript">
+        const scores = [10,30,15,25,40];
+        const filterScores = scores.filter((score)=> {
+          return score > 20;
+        });
+      </code></pre>
+    </div>
+    
+    <hr class="divider" />
+    <div class="container">
+      <h3 id="sort">Sort</h3>
+    </div>
+
+    <hr class="divider" />
+    
+    <div class="container">
+      <h3 id='map'>Map</h3>
+    </div>
+    
+    <hr class="divider" />
+    
+    <div class="container">
+      <h3 id='reduce'>Reduce</h3>
+    </div>
+   
+    <hr class="divider" />
+    
+    <div class="container">
+      <h3 id='find'>Find</h3>
+    </div>
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js"></script>
