@@ -8,6 +8,7 @@ const players = [
   {name: 'russell', allstar: true,points: 22},
   {name: 'barret', allstar: false,points: 14}
 ];
+const names = ['lebron', 'giannis', 'kyle', 'russel', 'barret'];
 
 /*
 *
@@ -34,6 +35,7 @@ const highScores = scores.filter((score)=> {
 * The Sort() method sorts the elements of an array in place using a compare function and returns the sorted array. 
 *
 *     sort(compareFunction(){    });
+*   sort autmatically puts array items in alphabetical order
 */
 const stats = scores.sort((a,b)=> {
 
@@ -50,6 +52,11 @@ const ppg = players.sort( (a,b) => {
 })
 
 // console.table(ppg);
+
+// console.log(names);
+// names.sort();
+// console.log(names);
+// names.reverse(); // reverses the order of an alphabetical array
 
 
 
@@ -90,7 +97,7 @@ const lowestScores = scores.reduce( (total, score) => {
   //returns 3 beccause three scores are less than 30
 }, 0);
 
-console.log(lowestScores);
+// console.log(lowestScores);
 
 const totalPoints = players.reduce( (acc, curr) => {
   acc += curr.points;  
