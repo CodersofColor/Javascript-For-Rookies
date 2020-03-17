@@ -23,7 +23,7 @@ const generateUi = (data) => {
 
 
 
-  console.log(data.cityDets);
+  // console.log(data.cityDets);
   // console.log(data.cityDets);
 };
 
@@ -38,18 +38,26 @@ const updateCity = async (city)=> {
 form.addEventListener('submit', (e)=> {
   e.preventDefault();
 
-  const city= form.city.value.trim();
+
+  //store form input
+  const city = form.city.value.trim();
   form.reset();
 
   // console.log(city);
-
+  
   // update city name
   updateCity(city)
-  .then((data) => {
-    generateUi(data);
-  }).catch( (err) => {
-    console.log(err);
-  });
+    .then(data =>  generateUi(data))
+    .catch(err => console.log(err));
+
+  //set local storage
+  localStorage.setItem('city', city);
 
 });
+
+if(localStorage.getItem('city')){
+  updateCity(localStorage.getItem('city'))
+    .then(data => generateUi(data))
+    .catch(err => console.log(err));
+}
 
