@@ -1,3 +1,11 @@
+//TYPICAL USER EVENTS
+/* click
+* keyup
+* keydown
+* scroll
+* submit
+*/
+
 const list = document.querySelector('ul');
 const button = document.querySelector('button');
 
