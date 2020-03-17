@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Data</title>
+  <link rel="stylesheet" href="../../../utils/general.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container my-5">
+      <h2>Mentors</h2>
+      <ul class="mentor-list">
+      </ul>
+      <form class="form-group">
+        <label for="mentor">Add New Mentors</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="mentor" required>
+          <select id="industry">
+            <option>Business</option>
+            <option>Fashion</option>
+            <option>Art</option>
+            <option>Science</option>
+          </select>
+          <div class="input-group-append">
+            <input type="submit" value="add" class="btn btn-outline-secondary">
+          </div>
+        </div>
+      </form>
+    </div>
+  
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+  <script src="./js/firebase.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
