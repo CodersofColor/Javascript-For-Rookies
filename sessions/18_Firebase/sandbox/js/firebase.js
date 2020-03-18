@@ -4,7 +4,7 @@
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyAuZMrgmrSvphZtPGiOKVIt6tV5YWR9yR0",
+  apiKey: API_KEY,
   authDomain: "test-js-basics.firebaseapp.com",
   databaseURL: "https://test-js-basics.firebaseio.com",
   projectId: "test-js-basics",

@@ -1,10 +1,13 @@
 //Primitive Data Types
+  //SOB NUNS
+  
   // Strings --> a series of characters
-  // Number --> has only one type of numbers
   // Objects --> 
   // Booleans --> True or false values
-  // Null --> 
+
+  // Number --> has only one type of numbers
   // Undefined --> 
+  // Null -->   
   // Symbols --> 
 
   //What is a string?

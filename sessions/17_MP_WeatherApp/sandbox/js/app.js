@@ -4,6 +4,8 @@ const cityName = document.querySelector('.city-name');
 const weatherType = document.querySelector('.weather-type');
 const temp = document.querySelector('.degs');
 const time = document.querySelector('.time');
+const clearBtn = document.querySelector('.btn-clear');
+const report = new WeatherReport();
 
 
 const generateUi = (data) => {
@@ -16,24 +18,20 @@ const generateUi = (data) => {
   if(card.classList.contains('d-none')){
     card.classList.remove('d-none');
   }
-
   cityName.innerText = place;
   weatherType.innerText = conditions;
   temp.innerText = degVal;
-
-
-
   // console.log(data.cityDets);
   // console.log(data.cityDets);
 };
 
-const updateCity = async (city)=> {
-  //console.log(city);
-  const cityDets = await getCity(city);
-  const weather = await getWeather(cityDets.Key);
+// const updateCity = async (city)=> {
+//   //console.log(city);
+//   const cityDets = await getCity(city);
+//   const weather = await getWeather(cityDets.Key);
 
-  return { cityDets,weather }
-};
+//   return { cityDets,weather }
+// };
 
 form.addEventListener('submit', (e)=> {
   e.preventDefault();
@@ -46,7 +44,7 @@ form.addEventListener('submit', (e)=> {
   // console.log(city);
   
   // update city name
-  updateCity(city)
+  report.updateCity(city)
     .then(data =>  generateUi(data))
     .catch(err => console.log(err));
 
@@ -56,8 +54,12 @@ form.addEventListener('submit', (e)=> {
 });
 
 if(localStorage.getItem('city')){
-  updateCity(localStorage.getItem('city'))
+  report.updateCity(localStorage.getItem('city'))
     .then(data => generateUi(data))
     .catch(err => console.log(err));
 }
+clearBtn.addEventListener('click', (e) => {
+  console.log('cleared');
+  localStorage.clear();
+});
 

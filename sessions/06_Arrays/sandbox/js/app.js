@@ -1,12 +1,12 @@
 //EXAMPLE ARRAYS
 const daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-const scores = [10,30,15,25,40];
+const scores = [10, 30, 15, 25, 40];
 const players = [
-  {name: 'lebron', allstar: true, points: 30},
-  {name: 'giannis', allstar: true,points: 28},
-  {name: 'kyle', allstar: false, points: 17},
-  {name: 'russell', allstar: true,points: 22},
-  {name: 'barret', allstar: false,points: 14}
+  { name: 'lebron', allstar: true, points: 30 },
+  { name: 'giannis', allstar: true, points: 28 },
+  { name: 'kyle', allstar: false, points: 17 },
+  { name: 'russell', allstar: true, points: 22 },
+  { name: 'barret', allstar: false, points: 14 }
 ];
 const names = ['lebron', 'giannis', 'kyle', 'russel', 'barret'];
 
@@ -17,10 +17,10 @@ const names = ['lebron', 'giannis', 'kyle', 'russel', 'barret'];
 *
 */
 
-const highScores = scores.filter((score)=> {
-    if(score > 25){
-      return score;
-    }
+const highScores = scores.filter((score) => {
+  if (score > 25) {
+    return score;
+  }
 });
 
 // console.table(highScores);
@@ -37,9 +37,9 @@ const highScores = scores.filter((score)=> {
 *     sort(compareFunction(){    });
 *   sort autmatically puts array items in alphabetical order
 */
-const stats = scores.sort((a,b)=> {
+const stats = scores.sort((a, b) => {
 
-  if(a > b){
+  if (a > b) {
     return 1;
   } else {
     return -1;
@@ -47,7 +47,7 @@ const stats = scores.sort((a,b)=> {
 
 });
 
-const ppg = players.sort( (a,b) => {
+const ppg = players.sort((a, b) => {
   return a.points > b.points ? -1 : 1;
 })
 
@@ -66,15 +66,15 @@ const ppg = players.sort( (a,b) => {
 * Creates a new array and returns the same number of items given to it
 */
 
-const divScores = scores.map( (score)=> {
-  return score /2;
+const divScores = scores.map((score) => {
+  return score / 2;
 });
 // console.table(divScores, scores);
 
 
 const mvpPlayer = players.map(player => {
-  if(player.points >= 25){
-    return {name: player.name, points: player.points, mvp: true}
+  if (player.points >= 25) {
+    return { name: player.name, points: player.points, mvp: true }
   } else {
     return player;
   }
@@ -89,8 +89,8 @@ const mvpPlayer = players.map(player => {
 * Returns any single value based on the values we want
 */
 
-const lowestScores = scores.reduce( (total, score) => {
-  if(score < 30){
+const lowestScores = scores.reduce((total, score) => {
+  if (score < 30) {
     total++;
   }
   return total;
@@ -99,10 +99,10 @@ const lowestScores = scores.reduce( (total, score) => {
 
 // console.log(lowestScores);
 
-const totalPoints = players.reduce( (acc, curr) => {
-  acc += curr.points;  
+const totalPoints = players.reduce((acc, curr) => {
+  acc += curr.points;
   return acc;
-},0);
+}, 0);
 
 // console.log(totalPoints);
 // scores.push(60);
@@ -119,3 +119,12 @@ const firstScore = scores.find((score) => {
 })
 
 // console.log(firstScore);
+
+
+
+
+//Spred and Rest
+
+
+
+//SETS
