@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel": "node_modules/.bin/babel ./sessions/20_ModernTools/src/**/*.js -w -o ./sessions/20_ModernTools/dist/bundle.js",
+    "build": "node_modules/.bin/webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/CodersofColor/Javascript-For-Rookies/issues"
   },
-  "homepage": "https://github.com/CodersofColor/Javascript-For-Rookies#readme"
+  "homepage": "https://github.com/CodersofColor/Javascript-For-Rookies#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {}
 }
