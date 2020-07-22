@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Array Reference Doc</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-okaidia.min.css"
+		/>
+		<link rel="stylesheet" href="../../../utils/general.css" />
+		<link rel="stylesheet" href="../../../utils/wiki.css" />
+	</head>
+	<body class="line-numbers">
+		<section class="content">
+			<div class="container">
+				<h3>Creating Arrays</h3>
+				<p>
+					Arrays are generally described as "list-like objects"; they are
+					basically single objects that contain multiple values stored in a
+					list. Array objects can be stored in variables and dealt with in much
+					the same way as any other type of value, the difference being that we
+					can access each value inside the list individually,
+				</p>
+				<pre>
+<code class="lang-javascript">//Creating an Array
+const data = [4,5,6];
+
+
+</code>
+</pre>
+			</div>
+
+			<div class="container">
+				<h3>Accessing Elements</h3>
+				<h5><code>Array Literals</code></h5>
+				<p>
+					An array literal is a list of zero or more expressions, each of which
+					represents an array element, enclosed in square brackets ([]). When
+					you create an array using an array literal, it is initialized with the
+					specified values as its elements, and its length is set to the number
+					of arguments specified.
+				</p>
+				<pre><code class="lang-javascript">//Accessing Elements
+let fish = ['Lion', , 'Angel'];
+
+fish[0] is 'lion'
+fish[1] is 'undefined'
+fish[2] is 'Angel'
+				</code></pre>
+			</div>
+
+			<div class="container">
+				<h2>Measuring an Array</h2>
+				<h5><code>array.lendth</code></h5>
+				<pre>
+<code class="lang-javascript">
+	fish.lenth;
+	// returns the number of elements in an array
+</code></pre>
+			</div>
+
+			<div class="container">
+				<h2>Adding Elements to an Array</h2>
+				<h5><code>array.push() | array.unshift()</code></h5>
+				<pre>
+<code class="lang-javascript">
+// Adding an element to the end
+fish.push('shark')
+
+//Adding an element to the beginning
+fish.unshift('goldfish');
+	
+</code>
+</pre>
+			</div>
+		</section>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/autoloader/prism-autoloader.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+	</body>
+</html>

@@ -87,3 +87,29 @@ Create a module property object and then create a 'rules' array property that de
   - test --> uses a regular expression to describe which files will be run through the loader
   - exclude --> a regex that tells the loader what to exlcude
   - use --> tells webpack which loader to use on this file
+
+
+### Adding a CSS Rules to webpack
+
+#### First install a CSS & Style Loader
+```
+npm install css-loader style-loader --save-dev
+```
+  - The CSS Loader helps webpack collect CSS from a css file.
+  - The style loader takes that CSS and adds it to our html page.
+
+#### Adding another test
+  Inside of the rules object Array
+```
+  {
+    test: /\.css$/,
+    use:['style-loader', 'css-loader']
+  }
+```
+  The order that this is declared in matters. The loaders run from RIGHT to LEfT. The css loader is run first (collecting the css) and then the style loader is run. 
+
+  Then import your css file into your main index.js file and the style should be visible. 
+```
+  import 'test.css'
+```
+

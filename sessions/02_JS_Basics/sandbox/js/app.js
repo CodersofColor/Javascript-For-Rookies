@@ -1,18 +1,18 @@
 //Primitive Data Types
-  //SOB NUNS
-  
-  // Strings --> a series of characters
-  // Objects --> 
-  // Booleans --> True or false values
+//SOB NUNS
 
-  // Number --> has only one type of numbers
-  // Undefined --> 
-  // Null -->   
-  // Symbols --> 
+// Strings --> a series of characters
+// Objects --> 
+// Booleans --> True or false values
 
-  //What is a string?
-  //What is a number?
-  //What is an Object
+// Number --> has only one type of numbers
+// Undefined --> 
+// Null -->   
+// Symbols --> 
+
+//What is a string?
+//What is a number?
+//What is an Object
 
 
 //Variables

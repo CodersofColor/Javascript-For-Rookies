@@ -1,0 +1,11 @@
+body{
+  background:purple;
+  background:yellow;
+  background:blue;
+}
+
+
+h1 {
+  color:red;
+  text-decoration: overline underline;
+}

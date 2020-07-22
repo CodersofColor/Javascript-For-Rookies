@@ -1,9 +1,10 @@
 import { addTitle, styleBody, nameIs } from "./dom.js";
 import players, { getStars } from './data';
+import './test.css';
 
 
 addTitle('Hello World');
-styleBody();
+// styleBody();
 // console.log(nameIs);
 // console.log(players);
 
